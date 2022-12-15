@@ -13,11 +13,11 @@ lbl_description = Label(window,
 lbl_input = Label(window, text="Для этого Вам необходимо ввести свои ФИО и дату рождения", wraplength=390,
                   justify=CENTER, padx=10, pady=10)
 
-lbl_name = Label(window, text="ФИО: ", wraplength=400, background="#b7b7b7")
+lbl_name = Label(window, text="ФИО: ", wraplength=400)
 
 result2 = StringVar()
 result2.set("АВАВАВА")
-lbl_result = Label(window, textvariable=result2, wraplength=370, background="#b4b7b7")
+lbl_result = Label(window, textvariable=result2, wraplength=370)
 
 
 def validate_username(username):
@@ -64,7 +64,7 @@ lbl_error = Label(foreground="red", textvariable=errmsg, wraplength=250)
 
 lbl_date = Label(window, text="Дата рождения: ")
 
-cal = DateEntry(window, selectmode='day', background="#b7b7b7")
+cal = DateEntry(window, selectmode='day', background="#AAA")
 
 btn_calculation = Button(window, text="Произвести рассчет", relief=GROOVE, command=test1)
 
