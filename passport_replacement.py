@@ -17,7 +17,7 @@ lbl_name = Label(window, text="ФИО: ", wraplength=400, background="#b7b7b7")
 
 result2 = StringVar()
 result2.set("АВАВАВА")
-lbl_result = Label(window, textvariable=result2, wraplength=370)
+lbl_result = Label(window, textvariable=result2, wraplength=370, background="#b7b7b7")
 
 
 def validate_username(username):
