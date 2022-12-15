@@ -70,6 +70,9 @@ output = StringVar()
 output.set("Здесь будет результат")
 lbl_output = Label(window, textvariable=output)
 
+# тест коммитов
+
+
 lbl_description.grid(row=0, column=0, columnspan=2)
 lbl_input.grid(row=1, column=0, columnspan=2)
 lbl_name.grid(row=2, column=0, sticky=W, padx=10)
