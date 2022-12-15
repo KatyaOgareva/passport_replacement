@@ -12,7 +12,9 @@ lbl_description = Label(window,
                         wraplength=390, justify=CENTER, padx=10, pady=10)
 lbl_input = Label(window, text="Для этого Вам необходимо ввести свои ФИО и дату рождения", wraplength=390,
                   justify=CENTER, padx=10, pady=10)
-lbl_name = Label(window, text="ФИО: ", wraplength=400)
+
+lbl_name = Label(window, text="ФИО: ", wraplength=400, background="#b7b7b7")
+
 result2 = StringVar()
 result2.set("АВАВАВА")
 lbl_result = Label(window, textvariable=result2, wraplength=370)
@@ -78,6 +80,6 @@ lbl_error.grid(row=3, column=1, columnspan=1, sticky=W)
 lbl_date.grid(row=4, column=0, columnspan=1, sticky=W, padx=10)
 cal.grid(row=4, column=1, sticky=W)
 btn_calculation.grid(row=5, column=0, columnspan=2, sticky=N, pady=30)
-lbl_result.grid(row=6, column=0, columnspan=2, sticky=W)
+lbl_result.grid(row=6, column=0, columnspan=2)
 lbl_output.grid(row=7, column=0, columnspan=2)
 window.mainloop()
