@@ -66,6 +66,10 @@ cal = DateEntry(window, selectmode='day', background="#b7b7b7")
 
 btn_calculation = Button(window, text="Произвести рассчет", relief=GROOVE, command=test1)
 
+output = StringVar()
+output.set("Здесь будет результат")
+lbl_output = Label(window, textvariable=output)
+
 lbl_description.grid(row=0, column=0, columnspan=2)
 lbl_input.grid(row=1, column=0, columnspan=2)
 lbl_name.grid(row=2, column=0, sticky=W, padx=10)
@@ -75,4 +79,5 @@ lbl_date.grid(row=4, column=0, columnspan=1, sticky=W, padx=10)
 cal.grid(row=4, column=1, sticky=W)
 btn_calculation.grid(row=5, column=0, columnspan=2, sticky=N, pady=30)
 lbl_result.grid(row=6, column=0, columnspan=2, sticky=W)
+lbl_output.grid(row=7, column=0, columnspan=2)
 window.mainloop()
