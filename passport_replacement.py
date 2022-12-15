@@ -5,14 +5,14 @@ from datetime import datetime
 
 window = Tk()
 window.title("Когда менять паспорт")
-window.geometry('370x550+760+250')
+window.geometry('380x550+760+250')
 
 lbl_description = Label(window,
                         text="Данная программа поможет Вам рассчитать через какой промежуток времени Вам нужно поменять паспорт",
                         wraplength=390, justify=CENTER, padx=10, pady=10)
 lbl_input = Label(window, text="Для этого Вам необходимо ввести свои ФИО и дату рождения", wraplength=390,
                   justify=CENTER, padx=10, pady=10)
-lbl_name = Label(window, text="ФИО: ", wraplength=400, background="#FFCDD2")
+lbl_name = Label(window, text="ФИО: ", wraplength=400)
 result2 = StringVar()
 result2.set("АВАВАВА")
 lbl_result = Label(window, textvariable=result2, wraplength=370)
@@ -58,9 +58,9 @@ errmsg = StringVar()
 
 entry_name = Entry(window, validate="key", validatecommand=check, width=40)
 
-lbl_error = Label(foreground="red", textvariable=errmsg, wraplength=250, background="#FFCDD2")
+lbl_error = Label(foreground="red", textvariable=errmsg, wraplength=250)
 
-lbl_date = Label(window, text="Дата рождения: ", background="#FFCDD2")
+lbl_date = Label(window, text="Дата рождения: ")
 
 cal = DateEntry(window, selectmode='day', background="#b7b7b7")
 
@@ -69,9 +69,6 @@ btn_calculation = Button(window, text="Произвести рассчет", rel
 output = StringVar()
 output.set("Здесь будет результат")
 lbl_output = Label(window, textvariable=output)
-
-# тест коммитов
-
 
 lbl_description.grid(row=0, column=0, columnspan=2)
 lbl_input.grid(row=1, column=0, columnspan=2)
